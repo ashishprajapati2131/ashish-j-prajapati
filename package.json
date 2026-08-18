@@ -1,0 +1,11 @@
+{
+  "name": "ashish-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website for Ashishkumar J. Prajapati",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": ["portfolio", "ai", "full-stack", "developer"],
+  "author": "Ashishkumar J. Prajapati",
+  "license": "MIT"
+}

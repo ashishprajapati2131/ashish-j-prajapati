@@ -1,0 +1,64 @@
+/* Tablet Breakpoint */
+@media (max-width: 1024px) {
+    .project-card.featured {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-card.featured .project-img {
+        min-height: 200px;
+    }
+    
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+}
+
+/* Mobile Breakpoint */
+@media (max-width: 768px) {
+    .nav-links, .nav-btn {
+        display: none;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    /* Mobile Menu Active State */
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--bg-secondary);
+        padding: var(--spacing-md);
+        border-bottom: 1px solid var(--card-border);
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+    }
+    
+    .stats-container {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+    
+    .timeline::before {
+        left: 10px;
+    }
+    
+    .timeline-item {
+        padding-left: 30px;
+    }
+    
+    .timeline-dot {
+        left: 4px;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+}
