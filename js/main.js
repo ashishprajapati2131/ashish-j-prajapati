@@ -135,24 +135,6 @@ if (modal && certImages.length > 0) {
     }
 }
 
-// Glowing Cursor Tracker
-const cursorGlow = document.getElementById('cursor-glow');
-if (cursorGlow) {
-    document.addEventListener('mousemove', (e) => {
-        cursorGlow.style.left = e.clientX + 'px';
-        cursorGlow.style.top = e.clientY + 'px';
-    });
-
-    document.addEventListener('mousedown', () => {
-        cursorGlow.style.width = '30px';
-        cursorGlow.style.height = '30px';
-    });
-
-    document.addEventListener('mouseup', () => {
-        cursorGlow.style.width = '40px';
-        cursorGlow.style.height = '40px';
-    });
-}
 
 // Initialize Lucide icons
 if (typeof lucide !== 'undefined') {
@@ -165,13 +147,3 @@ if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
 }
 
-// Initialize VanillaTilt for glass cards
-if (typeof VanillaTilt !== 'undefined') {
-    VanillaTilt.init(document.querySelectorAll(".glass-card"), {
-        max: 5,
-        speed: 400,
-        glare: true,
-        "max-glare": 0.1,
-        scale: 1.02
-    });
-}
